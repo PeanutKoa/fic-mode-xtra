@@ -49,7 +49,7 @@
   :group 'font-lock
   :group 'faces)
 
-(defcustom fic-highlighted-words '("FIXME" "TODO" "BUG")
+(defcustom fic-highlighted-words '("FIXME" "TODO" "BUG" "WARNING" "WARN" "NOTICE" "FIXED") 
   "Words to highlight."
   :group 'fic-mode)
 
@@ -64,14 +64,14 @@
 
 (defface fic-face
   '((((class color))
-     (:background "white" :foreground "red" :weight bold))
+     (:background "#89b4fa" :foreground "black" :weight bold))
     (t (:weight bold)))
   "Face to fontify FIXME/TODO words"
   :group 'fic-mode)
 
 (defface fic-author-face
   '((((class color))
-     (:background "white" :foreground "orangered" :underline t))
+     (:background "#89b4fa" :foreground "black" :underline t))
     (t (:underline t)))
   "Face to fontify author/assignee of FIXME/TODO"
   :group 'fic-mode)
