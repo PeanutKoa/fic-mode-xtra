@@ -127,5 +127,5 @@
       (font-lock-remove-keywords nil kwlist))
     (font-lock-fontify-buffer)))
 
-(provide 'fic-mode)
+(provide 'fic-mode-xtra)
 ;;; fic-mode.el ends here
